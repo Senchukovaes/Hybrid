@@ -4,7 +4,7 @@
 ## Инструкция по запуску
 Для запуска встраивания/восстановления сообщения необходимо создать конфигурацию запуска.
 
-В разделе **script** нужно указать модуль, обрабатывающий входные команды и запускающий встраивание/восстановление сообщения - hybrid_stego.py. В разделе **script parametrs** нужно ввести саму команду (они указаны ниже). В разделе **Working directory** необходимо указать рабочую директорию, это, непосредственно, сама папка **Hybrid**.
+В разделе **script** нужно указать модуль, обрабатывающий входные команды и запускающий встраивание/восстановление сообщения - **hybrid_stego.py**. В разделе **script parametrs** нужно ввести саму команду (они указаны ниже). В разделе **Working directory** необходимо указать рабочую директорию, это, непосредственно, сама папка **Hybrid**.
 
 ## Примеры команд запуска
 Команды приведены для картинки gradient.png, но при желании все пути и файлы в командах можно спокойно менять.
@@ -17,11 +17,11 @@ embed --cover imgs/original/gradient.png --out results/gradient_stego_simple.png
 ```
 extract --stego results/gradient_stego_simple.png --out gradient_simple_restored.txt --simple
 ```
-### Встраивание сообщения гибридным LSB-1
+### Встраивание сообщения гибридным LSB
 ```
 embed --cover imgs/original/gradient.png --out results/gradient_stego_hybrid.png --msg message.txt --password "mypass" --payload 0.005 --metrics
 ```
-#### Восстановление сообщения, встроенного гибридным LSB
+### Восстановление сообщения, встроенного гибридным LSB
 ```
 extract --stego results/gradient_stego_hybrid.png --out gradient_hybrid_restored.txt --password "mypass"
 ```
@@ -29,4 +29,16 @@ extract --stego results/gradient_stego_hybrid.png --out gradient_hybrid_restored
 ## Docker
 Для данного программного модуля был также создан dockerfile (лежит в корне проекта), при помощи которого можно собрать образ и запустить приложение в контейнере.
 ### Команда сборки образа
+```
+docker build -t lab_hybrid .
+```
+### Пример команды запуска (встраивание)
+```
+docker run -v ...:/data lab_hybrid embed --cover /data/gradient.png --out /data/dradient_stego.png --msg /data/message.txt --password "mypass"
+```
+> Вместо "..." необходимо вставить полный путь к папке с файлами, которую хотите использовать
+### Пример команды запуска (восстановление)
+```
+docher run -v ...:/data lab_hybrid extract --stego /data/gradient_stego_hybrid.png --out /data/gradient_hybrid_restored.txt --password "mypass"
+```
 
