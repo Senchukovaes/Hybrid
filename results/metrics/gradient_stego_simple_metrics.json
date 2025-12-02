@@ -1,0 +1,42 @@
+{
+  "cover": "C:\\Study\\Крипта\\Hybrid\\imgs\\original\\gradient.png",
+  "stego": "C:\\Study\\Крипта\\Hybrid\\results\\gradient_stego_simple.png",
+  "psnr": 74.12734868225562,
+  "ssim": 0.9999864756779658,
+  "chi2": {
+    "channels": {
+      "R": {
+        "chi2_total": 272.988671875,
+        "df": 127,
+        "p_value": 1.0725864640903637e-12
+      },
+      "G": {
+        "chi2_total": 311.29166666666663,
+        "df": 127,
+        "p_value": 0.0
+      },
+      "B": {
+        "chi2_total": 109.71782815694037,
+        "df": 127,
+        "p_value": 0.8633606424433455
+      }
+    },
+    "overall": {
+      "chi2_total": 231.33272223286903,
+      "df": 127,
+      "p_value": 4.458739100154929e-08
+    }
+  },
+  "entropy": {
+    "entropy_original": [
+      7.998525610347337,
+      7.998525610347337,
+      7.718236802378185
+    ],
+    "entropy_processed": [
+      7.998525939550944,
+      7.998418712035124,
+      7.718241953439706
+    ]
+  }
+}

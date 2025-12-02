@@ -1,0 +1,42 @@
+{
+  "cover": "C:\\Study\\Крипта\\Hybrid\\imgs\\original\\noise_texture.png",
+  "stego": "C:\\Study\\Крипта\\Hybrid\\results\\noise_texture_stego_simple.png",
+  "psnr": 74.20268736939451,
+  "ssim": 0.999992875926576,
+  "chi2": {
+    "channels": {
+      "R": {
+        "chi2_total": 1380.6163097229844,
+        "df": 31,
+        "p_value": 0.0
+      },
+      "G": {
+        "chi2_total": 1388.2654712248861,
+        "df": 31,
+        "p_value": 0.0
+      },
+      "B": {
+        "chi2_total": 1404.5149764492814,
+        "df": 31,
+        "p_value": 0.0
+      }
+    },
+    "overall": {
+      "chi2_total": 1391.1322524657173,
+      "df": 31,
+      "p_value": 0.0
+    }
+  },
+  "entropy": {
+    "entropy_original": [
+      4.805984077833154,
+      4.805984077833154,
+      4.805984077833154
+    ],
+    "entropy_processed": [
+      4.806055736203318,
+      4.806035298965121,
+      4.805989378422877
+    ]
+  }
+}

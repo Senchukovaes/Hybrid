@@ -1,0 +1,10 @@
+{
+  "method": "hybrid",
+  "len_bits": 3912,
+  "payload_fraction": 0.005,
+  "blob_size_bytes": 489,
+  "capacity_bytes": 786432,
+  "capacity_bits": 786432,
+  "cover": "C:\\Study\\Крипта\\Hybrid\\imgs\\original\\noise_texture.png",
+  "stego": "C:\\Study\\Крипта\\Hybrid\\results\\noise_texture_stego_hybrid.png"
+}

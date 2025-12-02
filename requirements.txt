@@ -1,0 +1,7 @@
+Pillow
+pycryptodome
+numpy
+scikit-image
+matplotlib
+scipy
+Crypto

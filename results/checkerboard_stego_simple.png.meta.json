@@ -1,0 +1,10 @@
+{
+  "method": "simple_lsb",
+  "len_bits": 3928,
+  "payload_fraction": 0.005,
+  "message_len": 487,
+  "capacity_bytes": 786432,
+  "capacity_bits": 786432,
+  "cover": "C:\\Study\\Крипта\\Hybrid\\imgs\\original\\checkerboard.png",
+  "stego": "C:\\Study\\Крипта\\Hybrid\\results\\checkerboard_stego_simple.png"
+}
